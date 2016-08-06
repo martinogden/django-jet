@@ -18,6 +18,7 @@
     <link href="{% static "jet/css/themes/"|add:THEME|add:"/jquery-ui.theme.css" %}" rel="stylesheet" class="jquery-ui-stylesheet" />
     <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="{% block stylesheet_ie %}{% static "admin/css/ie.css" %}{% endblock %}" /><![endif]-->
     {% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}{% static "admin/css/rtl.css" %}{% endblock %}" />{% endif %}
+    <link href="{% static "jet/css/icons/fonts/jet-icons.css" %}" rel="stylesheet" />
     {% block extrastyle %}{% endblock %}
 
     <script type="text/javascript">window.__admin_media_prefix__ = "{% filter escapejs %}{% static "admin/" %}{% endfilter %}";</script>
