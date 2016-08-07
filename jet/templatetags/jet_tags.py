@@ -183,6 +183,8 @@ def get_menu(context):
     for app in app_list:
         if not current_found:
             for model in app['models']:
+                if not 'admin_url' in model:
+                    continue
                 if context['request'].path.startswith(model['admin_url']):
                     model['current'] = True
                     current_found = True
